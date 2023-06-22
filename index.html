@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+         // declare Variable(Keywords)
+            //let
+            //var
+            //const
+//---------------------------------------------------------------------
+        //datatypes
+            //numbers
+            //objects
+            //booleans --- true or false
+            //strings
+            //undefined
+            //null 
+
+         // let  -- modern js keyword from es-6
+           //let ex = 10;
+           //let ex = "error";
+        //It shows error like:
+           //Uncaught SyntaxError: redeclaration of let exindex.html:13:15note: Previously declared at line 12, column 15
+
+         // var
+            //var ex = 10;
+            //var ex ="No error";
+        //It does not show any error
+
+        //const
+            //const ex = 10;
+            //a = 11;
+        //It shows error like:
+            //Uncaught ReferenceError: can't access lexical declaration 'a' before initialization
+
+    //-------------------------------------------------------------------
+
+        //object -- It works like dictionary
+            let obj = {
+                    p : 10,
+                    q : 20,
+
+                    //function define inside the object
+
+                    func : function Myfunc(number) {
+                        console.log("The number is " + number);
+                    }
+            }
+        //object call
+            //obj
+            //obj.p
+            //obj.q
+            //obj.func()
+            //obj.func(11)
+        //output
+            //Object { p: 10, q: 20 }
+            //10
+            //20 
+            //The number is undefined
+            //The number is 11
+
+    //------------------------------------------------------
+
+    //Example - Sawping of two number without using third variable
+
+        let a = 24;
+        let b = 11;
+        let c = "This is me!"
+
+       
+        
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        console.log("a = "+a);
+        console.log("b = "+b); 
+        console.log(c); 
+    
+    //--------------------------------------------------------
+        
+        function hello()
+        {
+            console.log("Heyy Akash");
+        }
+
+        // function call
+        // hello()
+        //output
+        // Heyy Akash
+
+    //-------------------------------------------------------
+
+        document.addEventListener("click", function click(){
+            console.log("Clicked");
+            alert("hello")
+            let conf =  confirm("Are you sure!")
+            console.log(conf);
+        //output
+        // clicked "ok"
+        //Clicked index.html:86:21
+        //true
+
+        // clicked "cancel"
+        //Clicked index.html:86:21
+        //false
+        })
+
+    //----------------------------------------------------------
+
+//Looping Statement.....
+
+        //forEach loop
+
+        let arr1 = [10 , 20 , 30];
+        let arr2 = ["abc" , "xyz" , "pqr"];
+        let arr3 = ["hyb" , 2];
+        arr1.forEach(element => {
+        //array call
+        //arr1
+        //output:
+        //Array(3) [ 10, 20, 30 ]
+        });
+
+    //---------------------------------------------------------
+
+        //for loop
+
+        for (let index = 0; index < arr2.length; index++) {
+            const element = arr2[index];   
+        }
+
+    //---------------------------------------------------------
+
+        //while loop
+
+        let index = 0;
+        while (arr3[index] != null) {
+        console.log(arr3[index]);
+        index++;
+        //output:hyb 2     
+        }
+
+    //----------------------------------------------------------
+
+        //do-while loop
+    
+        let i = 9
+        do {
+         
+            console.log("loop run at least one time either condition is false...");
+            i++;
+        
+            } while (i==10);
+            //output: loop run at least one time either condition is false...
+
+    //----------------------------------------------------------
+
+//Conditional statement....
+
+        //if - else
+
+        let num1 = 10;
+        if (num1 % 2 == 0) {
+            console.log("The number is Even..");   
+        }
+        else{
+            console.log("The number is Odd");
+        }
+        //output: The number is Even..
+
+    //------------------------------------------------------------
+
+        //Switch-case
+
+        let n = 0
+        switch (n) {
+
+            case 0: "Happy"
+                    console.log("I am so happy :)")
+                break;
+
+            case 1: "Sad"
+                console.log("I am so sad :(");
+                break;
+        
+            default: "Normal"
+                console.log("I am normal");
+                break;
+        }
+
+
+
+
+    
+    </script>
+
+</head>
+
+
+<body>
+    <h1>I am learning Java Script</h1>
+    
+</body>
+</html>
